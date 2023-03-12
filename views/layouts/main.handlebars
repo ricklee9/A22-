@@ -1,0 +1,36 @@
+<!-- ./views/layouts/main.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/app.css">
+</head>
+
+<body>
+  <div id="btn-control" class="btn-style">
+    <form method="post" action="/">
+    <button class="btn btn1 btn-primary">回到首頁</button>
+    </form>
+    <form method="post" action="/about">
+    <button class="btn btn2 btn-primary">About</button>
+    </form>
+    <form method="post" action="/portfolio"></form>
+    <button class="btn btn3 btn-primary">Portfolio</button>
+    </form>
+    <form method="post" action="/contact"></form>
+    <button class="btn btn4 btn-primary">Contact</button>
+    </form>
+  </div>
+  {{{ body }}}
+ 
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+  <script src="/javascripts/script.js"></script>
+</body>
+
+</html>
